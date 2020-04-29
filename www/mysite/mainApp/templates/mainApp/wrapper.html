@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+            <!-- Шапка сайта -->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #000000">
+            <div class="container-fluid">
+                <a class="navbar-brad"><h5 style="color: #FFE700"><img src="static/mainApp/image/logshapka.jpg" class="rounded-circle">Goalkeeper school by Vladimir Triboy</h5></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-iten active">
+                            <a href="#" class="nav-link">Главная</a>
+                        </li>
+                        <li class="nav-iten">
+                            <a href="#" class="nav-link active">Мультимедия</a>
+                        </li>
+                        <li class="nav-iten">
+                            <a href="#" class="nav-link active">Тренерский состав</a>
+                        </li>
+                        <li class="nav-iten active">
+                            <a href="tel:+380671480808" class="nav-link">+38067-148-08-08</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <!-- Слайдер изображений -->
+        <div class="carousel slide" data-ride="carousel" id="slides">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/mainApp/image/unnamed1.jpg">
+                    <div class="carousel-caption">
+                        <h1 class="display-2">Goalkeeper</h1>
+                        <h3>Научитесь программировать</h3>
+                        <button type="button" class="btn btn-outline-light btn-lg">Посмостреть</button>
+                        <button type="button" class="btn btn-warning btn-lg">DEMO</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/mainApp/image/unnamed.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/mainApp/image/unnamed1.jpg">
+                </div>
+            </div>
+        </div>
+            <!-- Основоной блок сайта -->
+        <div class="container-fluid">
+            <div class="row jumbotron">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                    <a href="#"><button class="btn btn-success btn-lg" type="button">Читать далее</button></a>
+                </div>
+            </div>
+        </div>
+            <!-- Блок с характеристиками -->
+            <div class="container-fluid">
+                <div class="row text-center alert">
+                    <div class="col-12">
+                        <h1 class="display-4">Создание сайтов</h1>
+                    </div>
+                    <hr>
+                    <div class="col-12">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Блок с описанием языков -->
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-code"></i>
+                    <h3>HTML5</h3>
+                    <p>Loren loren loren loren</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-bold"></i>
+                    <h3>Bootstrap</h3>
+                    <p>Loren loren loren loren</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fab fa-css3"></i>
+                    <h3>CSS3</h3>
+                    <p>Loren loren loren loren</p>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        <!-- Простая секция с изображением -->
+        <div class="row padding">
+            <div class="offset-lg-2 col-lg-4">
+                <h2>Что-то про тебя</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                <br>
+                <a href="#" class="btn btn-danger">Читать далее</a>
+            </div>
+            <div class="col-lg-6">
+                <br>
+                <img src="static/mainApp/image/gomer.gif" class="img-fluid">
+            </div>
+        </div>
+        <!-- Блок с фиксированным изображением -->
+        <figure>
+            <div class="fixed-wrap">
+                <div id="fixed">
+
+                </div>
+            </div>
+        </figure>
+        <!-- Расписания -->
+        <div style="background-color: #E4E4E4" class="container-fluid padding" id="fonc">
+            <div class="row alert text-center">
+                <div class="col-12">
+                    <h1 style="color: #FFEA4A" class="display-4">Время тренировок</h1>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div style="background-color: #000000" class="container padding col-12">
+            <div class="row padding">
+                <div class="col-md-3">
+                    <div style="background-color: #FFE100" class="card">
+                        <img src="/static/mainApp/image/zalmarrion.jpg" class="card-img-top">
+                        <div class="card-body1">
+                            <h4 class="card-title text-center">Спорткомплекс Маррион</h4>
+                            <p class="card-text text-center">Строительный переулок 4а</p>
+                            <h4 class="text-center">Вторник</h4>
+                            <h5 class="text-center">18:00-19:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="background-color: #FFE100" class="card">
+                        <img src="/static/mainApp/image/yunost.jpg" class="card-img-top">
+                        <div class="card-body2">
+                            <h4 class="card-title text-center">г.Черноморск спорткомплекс Юность</h4>
+                            <p class="card-text text-center">ул.Проспект мира 20</p>
+                            <h4 class="text-center">Четверг</h4>
+                            <h5 class="text-center">17:30-19:00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="background-color: #FFE100" class="card">
+                        <img src="/static/mainApp/image/psv.jpg" class="card-img-top">
+                        <div class="card-body3">
+                            <h4 class="card-title text-center">Спорткомплекс Черное море ПСВ</h4>
+                            <p class="card-text text-center">Крыжановка ул.Ветеранов 24</p>
+                            <h4 class="text-center">Суббота</h4>
+                            <h5 class="text-center">9:30-11:00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="background-color: #FFE100" class="card">
+                        <img src="/static/mainApp/image/onapt.jpg" class="card-img-top">
+                        <div class="card-body4">
+                            <h4 class="card-title text-center">Спортзал ОНАПТ</h4>
+                            <p class="card-text text-center">ул.Левитана 46а</p>
+                            <h4 class="text-center">Суббота</h4>
+                            <h5 class="text-center">15:00-16:00</h5>
+                            <h4 class="text-center">Воскресенье</h4>
+                            <h5 class="text-center">17:00-18:30</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Футер сайта -->
+        <footer class="container-fluid">
+            <div class="container-fluid">
+                <div class="row padding text-center">
+                    <div class="col-12">
+                        <h1 style="color: #FFE100">Наши контакты</h1>
+                    </div>
+                    <div class="col-12 social padding text-center">
+                        <a href="https://instagram.com/gks_vladimir_tryboi?igshid=1tvh2taer5aww"><i class="fab fa-instagram"></i></a>
+                        <a href="tel:+380671480808"><i class="fas fa-mobile-alt"></i></a>
+                        <a><i class="fa fa-at"></i></a>
+                        <a href="https://www.facebook.com/pages/category/Professional-Sports-Team/%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0-%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B2%D1%80%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D0%B9-%D0%A2%D1%80%D0%B8%D0%B1%D0%BE%D0%B9-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%B0-107058627432755/"><i class="fab fa-facebook"></i></a>
+                        <h5 style="color: #FFE100">tvp08081970@ukr.net</h5>
+                        <h5 style="color: #FFE100">+38067-148-08-08</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <hr>
+        (c) все права защищены 2019
+        <!-- Подключаем JQuery!! -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

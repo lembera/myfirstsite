@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #021E16;
+}
+
+.navbar-brad img {
+    width: 75px;
+}
+
+.navbar-brad li {
+    padding-right: 20px;
+}
+
+.nav-link {font-size: 1.1em !important}
+
+.carousel-inner {
+    height: 400px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-wid: 1100px) {
+    .carousel-inner img {
+        width: 100%;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    text-shadow: 1px 1px 10px #000;
+}
+
+@media (max-width: 450px) {
+    .carousel-caption .display-2 {
+        font-size: 3em;
+    }
+}
+
+.jumbotron {
+    padding: 1em;
+    border-radius: 0;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.padding {
+    padding: 2em;
+}
+
+.alert {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.alert  hr {
+    border-top: 2px solid #D0BE1A;
+    width: 95%;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+.fa-code {color: #e54d26}
+.fa-bold {color: #563d7c}
+.fa-css3 {color: #2163af}
+
+.fa-code, .fa-bold, .fa-css3 {
+    font-size: 4em;
+    margin: 1em;
+}
+
+
+#fixed {
+    height: 500px;
+    border-top: 4px solid #B8B8B8;
+    border-bottom: 4px solid #B8B8B8;
+    background: url("/static/mainApp/image/456.jfif") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-color: #FFFFFF;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+#fonc  {
+    background-image:url('/static/mainApp/image/fon.jpg');
+    color: #fff;
+    max-width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: relative;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+}
+
+.card-title {
+    padding-top: 8px;
+}
+
+.card-body1 {
+    padding-bottom: 70px;
+}
+
+.card-body2 {
+    padding-bottom: 40px;
+}
+
+.card-body3 {
+    margin-bottom: 42px;
+}
+
+.card-body4 {
+    margin-bottom: 3px;
+}
+
+@media(max-width: 750px) {
+    .display-4 {
+        font-size: 1.5em;
+    }
+}
+
+.social a {
+    font-size: 4em;
+    padding: 10px;
+}
+
+.fa-facebook {color: #3b5998}
+.fa-instagram {color: #F4005F}
+.fa-mobile-alt {color: #35FFFF}
+.fa-at {color: #F400F0}
+
+.fa-mobile-alt:hover {
+    color: #C5FFFF;
+}
+
+.fa-at:hover {
+    color: #F497F0;
+}
+
+.fa-instagram:hover {
+    color: #F87793;
+}
+
+.fa-facebook:hover {
+    color: #96B4F3;
+}
+
+footer {
+    background-color: #000000;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    border-top: 4px solid #FFE100;
+    color: #000000;
+}
